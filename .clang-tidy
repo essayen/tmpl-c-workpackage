@@ -1,0 +1,22 @@
+---
+Checks:          'clang-diagnostic-*,readability-*,cppcoreguidelines-avoid-goto,cppcoreguidelines-init-variables,bugprone-unused-return-value,bugprone-suspicious-semicolon'
+WarningsAsErrors: '*'
+HeaderFilterRegex: ''
+AnalyzeTemporaryDtors: false
+FormatStyle:     llvm
+CheckOptions:
+  - key:             readability-identifier-naming.LocalVariableCase
+    value:           'camelBack'
+  - key:             readability-identifier-naming.FunctionCase
+    value:           'camelBack'
+  - key:             readability-identifier-naming.GlobalVariableCase
+    value:           'camelBack'
+  - key:             readability-identifier-naming.ParameterCase
+    value:           'camelBack'
+  - key:             readability-identifier-naming.ConstantCase
+    value:           'UPPER_CASE'
+  - key:             readability-identifier-naming.EnumConstantCase
+    value:           'UPPER_CASE'
+  - key:             readability-identifier-naming.MacroDefinitionCase¶
+    value:           'UPPER_CASE'
+...
