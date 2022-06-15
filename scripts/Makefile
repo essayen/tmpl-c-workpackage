@@ -7,13 +7,11 @@ TARGET = $(shell basename $(CURDIR))
 
 # compiler flags:
 #    -std: explicitely choose C standard
-#          c11n most cases
-#          gnu11 for math defines (i.e. M_PI)
-CFLAGS = -g -Wall -std=c17
+CFLAGS = -g -Wall
 
 # linker flags
 #    add -lm to use mathematical funtions
-LDFLAGS = 
+LDFLAGS = -lm
 
 ########################################################
 
